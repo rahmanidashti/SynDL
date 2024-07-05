@@ -1,3 +1,7 @@
+<h1 align="left">
+<img style="vertical-align:middle" width="50px" height="40px" src="DeepJudge-logo.png" /> DL-LLM
+</h1>
+
 # DL-LLM
 TREC Deep Learning Full Synthetic Test Collection
 
