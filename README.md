@@ -1,8 +1,8 @@
 <h1 align="left">
-<img style="vertical-align:middle" width="40px" height="40px" src="DeepJudge-logo.png" /> DL-LLM
+<img style="vertical-align:middle" width="40px" height="40px" src="DeepJudge-logo.png" /> TestJudge
 </h1>
 
-# TestJudge
+## TestJudge
 TREC Deep Learning Full Synthetic Test Collection
 
 ## Prompt
