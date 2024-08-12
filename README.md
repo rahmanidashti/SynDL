@@ -2,7 +2,7 @@
 <img style="vertical-align:middle" width="40px" height="40px" src="DeepJudge-logo.png" /> DL-LLM
 </h1>
 
-# DL-LLM
+# TestJudge
 TREC Deep Learning Full Synthetic Test Collection
 
 ## Prompt
