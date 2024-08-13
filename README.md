@@ -7,14 +7,15 @@ TREC Deep Learning Full Synthetic Test Collection
 
 ## Folders and Files
 
-- __TREC-DLs-files__: This folder includes the relevance files for each year of TREC Deep Learning Track. For each year we have a folder and the folder contains the `run submissios`, the `qrel`, and the `test queries` for that specific year.
-- __TestJudge-generation__: includes notebooks for creating the depth pools based on the TREC DL pasy years submission and generating the judgment for them. The final created qrel and their judgments are in the `all-queries-processed-errors` folder.
-- __TestJudge-qrels__: This folder incldues the final merged synthetic qrels for all TREC DL years from 2019 to 2023. There are two different qrel files in this folder:
-    - __TestJudge_qrels_pass.txt__ is the file that only includes the synthetic judgments for the query-document pairs created using 10-depth pooling approach form each year submissions.
-    - __TestJudge_qrels_pass_withNIST.txt__ is the file that not includes synthetic ones (i.e., _TestJudge_qrels_pass.txt_) but also the human judgements for the query-document pairs that judged by NIST assessors.
-- __TREC-DLs-results__: includes the results for each year of TREC Deep Learning track for `ndcgeval` and `treceval` based on their corresponding `qrel`.
-- __TestJudge-partial-results__: includes the results for each year of TREC Deep Learning track for `ndcgeval` and `treceval` based on _TestJudge_qrels_pass_withNIST.txt_ qrel.
+- __TREC-DLs-files__: This folder includes the relevance files for each year of the TREC Deep Learning Track. For each year we have a folder and the folder contains the `run submissions`, the `qrel`, and the `test queries` for that specific year.
+- __TestJudge-generation__: includes notebooks for creating the depth pools based on the TREC DL past years' submissions and generating the judgment for them. The final created qrel and their judgments are in the `all-queries-processed-errors` folder.
+- __TestJudge-qrels__: This folder includes the final merged synthetic qrels for all TREC DL years from 2019 to 2023. There are two different qrel files in this folder:
+    - __TestJudge_qrels_pass.txt__ is the file that only includes the synthetic judgments for the query-document pairs created using a 10-depth pooling approach from each year's submissions.
+    - __TestJudge_qrels_pass_withNIST.txt__ is the file that not only includes synthetic ones (i.e., _TestJudge_qrels_pass.txt_) but also the human judgements for the query-document pairs that are judged by NIST assessors.
+- __TREC-DLs-results__: includes the results for each year of the TREC Deep Learning track for `ndcgeval` and `treceval` based on their corresponding `qrel`.
+- __TestJudge-partial-results__: includes the results for each year of the TREC Deep Learning track for `ndcgeval` and `treceval` based on _TestJudge_qrels_pass_withNIST.txt_ qrel.
 - __TestJudge-full-results__: includes the results for each year of TREC Deep Learning track for `ndcgeval` and `treceval` based on _TestJudge_qrels_pass.txt_ qrel.
+- __final-results__: includes the merged results files for different years based on different qrels.
  
 ## Prompt
 `prompt.txt` contains the prompt that we used for the relevance judgment generation. This prompt template is inspired by Thomas et al. [2] recent paper on search prefenrce predictions using LLMs.
