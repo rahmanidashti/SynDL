@@ -29,7 +29,7 @@ The qrels files can be found in the `./qrels/` folder. The qrels folder includes
 - __TestJudge_qrels_pass_withHuman.txt__: This qrel includes synthetic qrels based on our depth-10 pooling synthetic qrel construction and human qrels from all 5 years labelled by NIST assessors.
 
 ## Systems
-Run submissions for each year are included in the `TREC-DLs-files`folder under each year of the TREC DL track folder.
+Run submissions for each year are included in the `TREC-DLs-files` folder under each year of the TREC DL track folder.
 
 ## Reference
 [1] Rahmani, Hossein A., Nick Craswell, Emine Yilmaz, Bhaskar Mitra, and Daniel Campos. "Synthetic Test Collections for Retrieval Evaluation." arXiv preprint arXiv:2405.07767 (2024).
