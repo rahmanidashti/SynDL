@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Self-RAG: Learning to Retrieve, Generate and Critique through Self-Reflection.">
+        content="LLMJudge: Automatic Relevance Judgments for Search and Retrieval Systems">
   <meta name="keywords" content="rag, language models, llm">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Self-RAG: Learning to Retrieve, Generate and Critique through Self-Reflection</title>
+  <title>LLMJudge: Automatic Relevance Judgments for Search and Retrieval Systems</title>
 
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
@@ -33,87 +33,76 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">Self-RAG: Learning to Retrieve, Generate and Critique through Self-Reflections</h1>
+          <h1 class="title is-1 publication-title"><img src="static/images/LLMJudge-logo.png" alt="LLMJudge Logo" width="50" height="40"> Automatic Relevance Judgments for Search and Retrieval Systems</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://akariasai.github.io/">Akari Asai</a><sup>1</sup></span>
-            <span class="author-block">
-              <a href="https://ellenmellon.github.io/">Zeqiu Wu</a><sup>1</sup></span>
-            <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~yizhongw/">Yizhong Wang</a><sup>1</sup>,
+              <a href="https://rahmanidashti.github.io/">Hossein A. Rahmani</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://research.ibm.com/people/avi-sil">Avirup Sil</a><sup>2</sup>,
+              <a href="https://sites.google.com/site/emineyilmaz/home">Emine Yilmaz</a><sup>1</sup>,
             </span>
             <span class="author-block">
-              <a href="https://homes.cs.washington.edu/~hannaneh/">Hannaneh Hajishirzi</a><sup>1,3</sup>,
+              <a href="https://www.microsoft.com/en-us/research/people/nickcr/">Nick Craswell</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.microsoft.com/en-us/research/people/bmitra/">Bhaskar Mitra</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.microsoft.com/en-us/research/people/pathom/">Paul Thomas</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://plg.uwaterloo.ca/~claclark/">Charles L. A. Clarke</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://aliannejadi.com/">Mohammad Aliannejadi</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://clemenciah.github.io/">Clemencia Siro</a><sup>4</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.dei.unipd.it/~faggioli/">Guglielmo Faggioli</a><sup>5</sup>
             </span>
           </div>
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University of Washington,</span>
-            <span class="author-block"><sup>2</sup>IBM AI Research,</span>
-            <span class="author-block"><sup>3</sup>Allen Institute for AI</span>
+            <span class="author-block"><sup>1</sup>University College London,</span>
+            <span class="author-block"><sup>2</sup>Microsoft,</span>
+            <span class="author-block"><sup>3</sup>University of Waterloo,</span>
+            <span class="author-block"><sup>4</sup>University of Amsterdam,</span>
+            <span class="author-block"><sup>5</sup>University of Padua</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2310.11511"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>LLMJudge Overview</span>
                 </a>
               </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://github.com/AkariAsai/self-rag"
-                   class="external-link button is-normal is-rounded is-dark">
+                <a href="https://github.com/llm4eval/LLMJudge"
+                   class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
-                  <span>Code</span>
+                  <span>Challenge Coda and Data</span>
                 </a>
               </span>
               <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://huggingface.co/selfrag/selfrag_llama2_7b"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Model (7B)</span>
-                  </a>
-              </span>
-              <span class="link-block">
-                <a href="https://huggingface.co/selfrag/selfrag_llama2_13b"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Model (13B)</span>
-                  </a>
-              </span>
               <!-- Dataset Link. -->
               <span class="link-block">
-                <a href="https://huggingface.co/datasets/selfrag/selfrag_train_data"
+                <a href="#"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="far fa-images"></i>
                   </span>
                   <span>Data</span>
                 </a>
-                <span class="link-block">
-                  <a href="https://huggingface.co/papers/2310.11511"
-                     class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span>HF Space</span>
-                  </a>
-                </span>
             </div>
           </div>
         </div>
@@ -125,9 +114,9 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered">
-        <span class="dnerf">Self-RAG</span> learns to retrieve, generate and critique to enhance LM's output quality and factuality, outperforming ChatGPT and retrieval-augmented LLama2 Chat on six tasks.  
+        <span class="dnerf">LLMJudge Benchamrk</span> TBA  
       </h2>
-      <img src="static/images/teaser_self_rag_v8.png" alt="BUFFET teaser.">
+      <img src="#" alt="An image to be added.">
     </div>
   </div>
 </section>
@@ -138,18 +127,7 @@
       <div class="column is-four-fifths">
         <h2 class="title is-3">Summary</h2>
         <div class="content has-text-justified">
-          <p><b>The issue: Factual inaccuracies of versatile LLMs</b><br>Despite their remarkable capabilities, large language models (LLMs) often produce responses containing factual inaccuracies due to their sole reliance on the parametric knowledge they encapsulate. 
-            They often generate hallucinations, especially in long-tail, their knowledge gets obsolete, and lacks attribution.  
-          <p><b>Is Retrieval-Augmented Generation a silver bullet? </b><br>Retrieval-Augmented Generation (RAG), an ad hoc approach that augments LMs with retrieval of relevant knowledge, decreases such issues and shows effectiveness in knowledge-intensive tasks such as QA. 
-          However, <b>indiscriminately retrieving and incorporating a fixed number of retrieved passages, regardless of whether retrieval is necessary, or passages are relevant, diminishes LM versatility or can lead to unhelpful response generation</b>. Moreover, there's no guarantee that generations are entailed by cited evidence. </p>
-          <!-- <p> Can we train a model that can decide when to retrieve, judges if retrieved passages are indeed helpful and generates conditioned on them? Can we build a reliable instruction-following LM that can provide citations?</p> -->
-          <p><b>What is <b><span style="color: red">Self-RAG</span></b>?</b><br>
-           <span style="color: red"><b>Self-Reflective Retrieval-Augmented Generation (Self-RAG)</b></span> is a new framework to enhances an LM's quality and factuality through retrieval and self-reflection. 
-            Our framework trains a single arbitrary LM that adaptively <b>retrieves passages on-demand</b> (e.g., can retrieve multiple times during generation, or completely skip retrieval), and <b>generates and reflects on retrieved passages and its own generations</b> using special tokens, called <span style="color: red"><b>reflection tokens</b></span>. 
-            Generating reflection tokens makes the LM controllable during the inference phase, enabling it to tailor its behavior to diverse task requirements. 
-            <p><b>How good is <b><span style="color: red">Self-RAG</span></b>?</b><br>
-            Experiments show that <b><span style="color: red">Self-RAG</span> (7B and 13B parameters) significantly outperforms state-of-the-art LLMs and retrieval-augmented models on a diverse set of tasks</b>. 
-            Specifically, Self-RAG outperforms ChatGPT and retrieval-augmented Llama2-chat on Open-domain QA, reasoning and fact verification tasks, and it shows significant gains in improving factuality and citation accuracy for long-form generations relative to these models.
+          To be added.
           </p>
         </div>
       </div>
@@ -162,61 +140,42 @@
     <!-- Animation. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Self-RAG: Learning to Retrieve, Generate and Critique</h2>
+        <h2 class="title is-3">LLMJudge Challenge Dataset</h2>
         <!-- Interpolating. -->
         <!-- <h3 class="title is-4">Overall Model Performance</h3> -->
         <div class="content has-text-justified">
-          <p>
-          <span style="color: red"><b>Self-RAG</b></span> is a new framework that trains and controls an arbitrary LM through <span style="color: red"><b>Self-reflection tokens</b></span>. In particular, at every segment (e.g., sentence), Self-RAG can
-          </p>
-          <ul>
-            <li><b>Retrieve: Self-RAG first</b> decodes a <span style="color: red"><b>retrieval token</b></span> to evaluate the utility of retrieval and control a retrieval component. If retrieval is required, our LM calls an external retrieval module to find top relevant documents, using input query and previous generation. </li>
-            <li><b>Generate: </b>If retrieval is not required, the model predicts the next output segment, as it does in a standard LM.  If retrieval is needed, the model first generates generates <span style="color: red"><b>critique token</b></span> evaluating whether retrieved documents are relevant, and then generate continuation conditioned on the retrieved passages.</li>
-            <li><b>Critique: </b>If retrieval is required, the model further evaluates if passages support generation. Finally, a  new critique token evaluates the overall utility of the response.</li>
-          </ul>
-          Below, we show different types of our <span style="color: red"><b>reflection tokens</b></span> that are added to Self-RAG vocabulary during training. </br> 
-          <img src="static/images/special_tokens.png" alt="special tokens">
+          <img src="#" alt="intro">
         </div>
         <div class="columns is-vcentered interpolation-panel">
         </div>
         <br/>
         <div class="content has-text-justified">
-          <h3 class="title is-4">Training of Self-RAG</h3>
-          <p>
-          <span style="color: red"><b>Self-RAG</b></span> training consists of three models, a <span style="color: red"><b>Retriever</b></span>, a <span style="color: red"><b>Critic</b></span> and a <span style="color: red"><b>Generator</b></span>. 
-          </p>
-          <p>
-            1. Trains the <b>Critic</b> and augment diverse instruction-output data with retrieved passages by the <b>Retriever</b> as well as reflection tokens (See Figure below).
-          </p>
-          <p>
-            2. Train the <b>Generator</b> LM using a standard next token prediction objective to learns to generate natural continuations as well as special tokens to retrieve or critique its own generations. 
-          </p>
-          <img src="static/images/training_examples.png" alt="special tokens">
         </div>
         <div class="content has-text-justified">
-          <h3 class="title is-4">Inference of Self-RAG</h3>
-          <p>
-          By learning to generate reflection tokens, Self-RAG enables to tailor model behaviors for diverse downstream tasks or preferences, without requiring training LMs. In particular, 
-          </p>
-          <ul>
-            <li><span style="color: red"><b>Adaptive retrieval with retrieval tokens: </b></span>Prior work often retrieves passages fixed times (e.g., only retrieves at the beginning, every k-tokens) during generation struggles to balance trade-off between quality and efficiency. While Self-RAG learns to generate retrieval tokens to adaptively retrieve, one can also change frequency based on their soft-constraints using token probability of retrieval tokens.</li>
-            <li><span style="color: red"><b>Tree-decoding with critique tokens: </b></span>Self-RAG introduces multiple fine-grained critique tokens evaluating different aspects of generation quality (e.g., supported by evidence, completeness). We conduct segment-level beam search using linear interpolation of desirable critique token probability to identify K best continuations at every time step.</li>
-          </ul>
         </div>
         <div class="content has-text-justified">
-          <h3 class="title is-4">Connections to Prior Work</h3>
-          <h4 class="title is-8">v.s. Retrieval-augmented Generation</h4>
-          <p>
-          <ul>
-            <li>Standard RAG only retrieves once or fixed number of time steps, while Self-RAG enables <span style="color: red"><b>Adaptive retrieval</b></span> for diverse task inputs, and can retrieve multiple times while generations, or completely skip retrieval, making it more suitable for diverse downstream queries (e.g., instruction-following).</li>
-            <li>Self-RAG carefully <span style="color: red"><b>criticize</b></span> retrieved passages or its own generations via reflection tokens and incorporate hard or soft constrained during decoding, while standard RAG does not assess relevance of passages or whether the output is indeed supported by the passages. </li>
-          </ul>
-          </p>
-          <h4 class="title is-8">v.s. Learning from Critique (Feedback)</h4>
-          <ul>
-            <li>Reflection tokens are inserted offline by another Critic model trained on machine-generated feedback, making training much more memory efficient and stable than widely adopted RLHF methods (e.g., PPO).</li>
-            <li>Self-RAG enables tailored behaviors by simply adjusting reward weights across multiple preference aspects, while prior fine-grained feedback learning method requires training for different model behaviors.</li>
-          </ul>
+        </div>
+      </section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Animation. -->
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">LLMJudge Benchamrk</h2>
+        <!-- Interpolating. -->
+        <!-- <h3 class="title is-4">Overall Model Performance</h3> -->
+        <div class="content has-text-justified">
+          <img src="#" alt="intro">
+        </div>
+        <div class="columns is-vcentered interpolation-panel">
+        </div>
+        <br/>
+        <div class="content has-text-justified">
+        </div>
+        <div class="content has-text-justified">
+        </div>
+        <div class="content has-text-justified">
         </div>
       </section>
       <section class="section">
@@ -229,21 +188,12 @@
               <br/>
               <div class="content has-text-justified">
                 <h3 class="title is-4">Main Results</h3>
-                <p>
-                <span style="color: red"><b>Self-RAG</b></span> outperforms vanilla ChatGPT or LLama2-chat across six tasks, and outperforms those SOTA models with widely-used retrieval-augmentation methods in most tasks by large margin. 
-                </p>
-                <img src="static/images/results.png" alt="results">
+                <img src="#" alt="results">
               </div>
               <div class="content has-text-justified">
                 <h3 class="title is-4">Analysis</h3>
-                <img src="static/images/analysis_result_1.png" alt="analysis results">
+                <img src="#" alt="analysis results">
                 <h4 class="title is-8">(A) Ablations</h4>
-                <p>Our ablation results show that all training and inference components play important roles to improve performance off Self-RAG.</p>
-
-                <h4 class="title is-8">(B) Inference-time customization via critique tokens</h4> 
-                <p>Self-RAG enables practitioners to tailor model's behaviors for different fine-grained preferences. For instance, putting more emphasis on whether a model generation is supported by the evidence can increase citation precision (precision in Figure (b)) on long-form generation, while putting less emphasis on it can increase the output fluency as a model may generate output more flexibly and fluently, regardless of whether it is supported by the cite evidence.</p>
-                <h4 class="title is-8">(C) Adaptive retrieval via retrieval tokens</h4>
-                <p>Self-RAGgenerates retrieval tokens by itself when it judges retrieval is necessary, while one can also increase or decrease retrieval frequency based on diverse end tasks. As you can see, retrieval less can hurt performance on Open domain QA (PopQA; 40% relative performance drop) while it gives marginal performance deterioration in fact verification task (PubHealth; 2%).</p>
               </div>
             </section>
       
@@ -251,12 +201,12 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{asai2023selfrag,
-      author    = {Asai, Akari and Wu, Zeqiu and Wang, Yizhong and Sil, Avirup and Hajishirzi, Hannaneh},
-      title     = {{Self-RAG}: Learning to Retrieve, Generate, and Critique through Self-Reflection},
-      year      = {2023},
-     journal    = {arXiv preprint arXiv:2310.11511},
-     url        = {https://arxiv.org/abs/2310.11511}
+    <pre><code>@article{rahmani2024llmhudgebench,
+      author    = {Rahmani, Hossein A. and Yilmaz, Emine and Craswell, Nick and Mitra, Bhaskar and Thomas, Paul and Clarke, Charles L. A. and Aliannejadi, Mohammad and Siro, Clemencia and Faggioli, Guglielmo},
+      title     = {LLMJudge: Automatic Relevance Judgments for Search and Retrieval Systems},
+      year      = {2024},
+     journal    = {#},
+     url        = {#}
     }</code></pre>
   </div>
 </section>
@@ -270,7 +220,7 @@
          href="">
         <i class="fas fa-file-pdf"></i>
       </a>
-      <a class="icon-link" href="https://akariasai.github.io/" class="external-link" disabled>
+      <a class="icon-link" href="https://rahmanidashti.github.io/" class="external-link" disabled>
         <i class="fab fa-github"></i>
       </a>
     </div>
