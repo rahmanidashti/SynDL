@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-  <meta name="description"
-        content="LLMJudge: Automatic Relevance Judgments for Search and Retrieval Systems">
+  <meta name="description" content="LLMJudge: Automatic Relevance Judgments for Search and Retrieval Systems">
   <meta name="keywords" content="rag, language models, llm">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TestJudge: A Large-Scale Synthetic Test Collection</title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
   <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
   <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
 
@@ -26,223 +24,194 @@
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
 </head>
+
 <body>
 
-<section class="hero">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h3 class="title is-1 publication-title"><img src="static/images/TestJudge-logo.png" alt="LLMJudge Logo" width="50" height="40"> TestJudge: A Large-Scale Synthetic Test Collection</h3>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a href="https://rahmanidashti.github.io/">Hossein A. Rahmani</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.xiwangeric.com/">Xi Wang</a><sup>2</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://sites.google.com/site/emineyilmaz/home">Emine Yilmaz</a><sup>1</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.microsoft.com/en-us/research/people/nickcr/">Nick Craswell</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.microsoft.com/en-us/research/people/bmitra/">Bhaskar Mitra</a><sup>3</sup>,
-            </span>
-            <span class="author-block">
-              <a href="https://www.microsoft.com/en-us/research/people/pathom/">Paul Thomas</a><sup>3</sup>,
-            </span>
-          </div>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>University College London,</span>
-            <span class="author-block"><sup>2</sup>University of Sheffield,</span>
-            <span class="author-block"><sup>3</sup>Microsoft</span>
-          </div>
-
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-              <!-- PDF Link. -->
-              <span class="link-block">
-                <a href="#"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+            <h3 class="title is-1 publication-title"><img src="static/images/TestJudge-logo.png" alt="LLMJudge Logo"
+                width="50" height="40"> TestJudge: A Large-Scale Synthetic Test Collection</h3>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://rahmanidashti.github.io/">Hossein A. Rahmani</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.xiwangeric.com/">Xi Wang</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/site/emineyilmaz/home">Emine Yilmaz</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.microsoft.com/en-us/research/people/nickcr/">Nick Craswell</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.microsoft.com/en-us/research/people/bmitra/">Bhaskar Mitra</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://www.microsoft.com/en-us/research/people/pathom/">Paul Thomas</a><sup>3</sup>,
+              </span>
+            </div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>University College London,</span>
+              <span class="author-block"><sup>2</sup>University of Sheffield,</span>
+              <span class="author-block"><sup>3</sup>Microsoft</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span>
-              <!-- Video Link. -->
-              <span class="link-block">
-                <a href="https://github.com/llm4eval/LLMJudge"
-                   class="external-link button is-normal is-rounded is-dark" target="_blank">
-                  <span class="icon">
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+                <!-- Video Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/llm4eval/LLMJudge"
+                    class="external-link button is-normal is-rounded is-dark" target="_blank">
+                    <span class="icon">
                       <i class="fab fa-github"></i>
-                  </span>
-                  <span>Challenge Coda and Data</span>
-                </a>
-              </span>
-              <!-- Code Link. -->
-              <!-- Dataset Link. -->
-              <span class="link-block">
-                <a href="https://github.com/rahmanidashti/TestJudge"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
+                    </span>
+                    <span>Challenge Coda and Data</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <!-- Dataset Link. -->
+                <span class="link-block">
+                  <a href="https://github.com/rahmanidashti/TestJudge"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
                       <i class="far fa-images"></i>
-                  </span>
-                  <span>Data</span>
-                </a>
+                    </span>
+                    <span>Data</span>
+                  </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="subtitle has-text-centered">
-        <span class="dnerf">TestJudge</span>: Synthetic Test Collection  
-      </h2>
-      <img src="static/images/datasets.png" alt="An image to be added.">
+  </section>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <h2 class="subtitle has-text-centered">
+          <span class="dnerf">TestJudge</span>: Synthetic Test Collection
+        </h2>
+        <img src="static/images/datasets.png" alt="An image to be added.">
+      </div>
     </div>
-  </div>
-</section>
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Summary</h2>
-        <div class="content has-text-justified">
-          <p>
-            Large-scale test collections play a crucial role in Information Retrieval (IR) research. However, according to the Cranfield paradigm and the research into publicly available datasets, the existing information retrieval research studies are commonly developed on small-scale datasets that rely on human assessors for relevance judgments — a time-intensive and expensive process. Recent studies have shown the strong capability of Large Language Models (LLMs) in producing reliable relevance judgments with human accuracy but at a greatly reduced cost. In this paper, to address the missing large-scale ad-hoc document retrieval dataset, we extend the TREC Deep Learning Track (DL) test collection via additional language model synthetic labels to enable researchers to test and evaluate their search systems at a large scale. Specifically, such a test collection includes more than 2,000 test queries from the previous years of tracks. We compare system evaluation with past human labels from past years and find that our synthetically created large-scale test collection can lead to highly correlated system rankings.
-          </p>
+  </section>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Summary</h2>
+          <div class="content has-text-justified">
+            <p>
+              Large-scale test collections play a crucial role in Information Retrieval (IR) research. However,
+              according to the Cranfield paradigm and the research into publicly available datasets, the existing
+              information retrieval research studies are commonly developed on small-scale datasets that rely on human
+              assessors for relevance judgments — a time-intensive and expensive process. Recent studies have shown the
+              strong capability of Large Language Models (LLMs) in producing reliable relevance judgments with human
+              accuracy but at a greatly reduced cost. In this paper, to address the missing large-scale ad-hoc document
+              retrieval dataset, we extend the TREC Deep Learning Track (DL) test collection via additional language
+              model synthetic labels to enable researchers to test and evaluate their search systems at a large scale.
+              Specifically, such a test collection includes more than 2,000 test queries from the previous years of
+              tracks. We compare system evaluation with past human labels from past years and find that our
+              synthetically created large-scale test collection can lead to highly correlated system rankings.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Results and Analysis</h2>
+          <div class="columns is-vcentered interpolation-panel">
+          </div>
+          <br />
+          <div class="content has-text-justified">
+            <h3 class="title is-4">Main Results</h3>
+            <img src="#" alt="results"> TBA
+          </div>
+          <div class="content has-text-justified">
+            <h3 class="title is-4">DL 2019</h3>
+            <img src="static/images/dl2019.png" alt="analysis results">
+            <h3 class="title is-4">DL 2020</h3>
+            <img src="static/images/dl2020.png" alt="analysis results">
+            <h3 class="title is-4">DL 2021</h3>
+            <img src="static/images/dl2021.png" alt="analysis results">
+            <h3 class="title is-4">DL 2022</h3>
+            <img src="static/images/dl2022.png" alt="analysis results">
+            <h3 class="title is-4">DL 2023</h3>
+            <img src="static/images/dl2023.png" alt="analysis results">
+            <h3 class="title is-4">Bias Analysis</h3>
+            <img src="static/images/dl2023-color.png" alt="analysis results">
+          </div>
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-</section>
+  </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">LLMJudge Challenge Dataset</h2>
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Overall Model Performance</h3> -->
-        <div class="content has-text-justified">
-          <img src="#" alt="intro">
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-        </div>
-        <br/>
-        <div class="content has-text-justified">
-        </div>
-        <div class="content has-text-justified">
-        </div>
-        <div class="content has-text-justified">
-        </div>
-      </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">LLMJudge Benchamrk</h2>
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Overall Model Performance</h3> -->
-        <div class="content has-text-justified">
-          <img src="#" alt="intro">
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-        </div>
-        <br/>
-        <div class="content has-text-justified">
-        </div>
-        <div class="content has-text-justified">
-        </div>
-        <div class="content has-text-justified">
-        </div>
-      </section>
-      <section class="section">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column is-full-width">
-              <h2 class="title is-3">Results and Analysis</h2>
-              <div class="columns is-vcentered interpolation-panel">
-              </div>
-              <br/>
-              <div class="content has-text-justified">
-                <h3 class="title is-4">Main Results</h3>
-                <img src="#" alt="results"> TBA
-              </div>
-              <div class="content has-text-justified">
-                <h3 class="title is-4">DL 2019</h3>
-                <img src="static/images/dl2019.png" alt="analysis results">
-                <h3 class="title is-4">DL 2020</h3>
-                <img src="static/images/dl2020.png" alt="analysis results">
-                <h3 class="title is-4">DL 2021</h3>
-                <img src="static/images/dl2021.png" alt="analysis results">
-                <h3 class="title is-4">DL 2022</h3>
-                <img src="static/images/dl2022.png" alt="analysis results">
-                <h3 class="title is-4">DL 2023</h3>
-                <img src="static/images/dl2023.png" alt="analysis results">
-                <h3 class="title is-4">Bias Analysis</h3>
-                <img src="static/images/dl2023-color.png" alt="analysis results">
-              </div>
-            </section>
-      
-
-<section class="section" id="BibTeX">
-  <div class="container is-max-desktop content">
-    <h2 class="title">BibTeX</h2>
-    <pre><code>@article{rahmani2024testjudge,
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{rahmani2024testjudge,
       author    = {Rahmani, Hossein A. and Wang, Xi and Yilmaz, Emine and Craswell, Nick and Mitra, Bhaskar and Thomas, Paul},
       title     = {TestJudge: A Large-Scale Synthetic Test Collection},
       year      = {2024},
      journal    = {#},
      url        = {#}
     }</code></pre>
-  </div>
-</section>
-
-
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a class="icon-link"
-         href="">
-        <i class="fas fa-file-pdf"></i>
-      </a>
-      <a class="icon-link" href="https://rahmanidashti.github.io/" class="external-link" disabled>
-        <i class="fab fa-github"></i>
-      </a>
     </div>
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-          <p>
-            This website is licensed under a <a rel="license"
-                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-          <p>
-            This means you are free to borrow the <a
-              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
-            we just ask that you link back to this page in the footer.
-            Please remember to remove the analytics code included in the header of the website which
-            you do not want on your website.
-          </p>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://rahmanidashti.github.io/" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
+  </footer>
 
 </body>
+
 </html>
