@@ -3,7 +3,7 @@
 </h1>
 
 ## SynDL
-TREC Deep Learning Full Synthetic Test Collection
+SynDL: A Large-Scale Synthetic Test Collection for Passage Retrieval
 
 ## Folders and Files
 
