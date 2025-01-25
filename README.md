@@ -11,6 +11,12 @@ SynDL: A Large-Scale Synthetic Test Collection for Passage Retrieval
   [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 </div>
 
+## Overview
+<p align="center">
+  <img src="figs/synthetic-queries.png" width="400">
+</a>
+<br />
+
 ## Folders and Files
 
 - __TREC-DLs-files__: This folder includes the relevance files for each year of the TREC Deep Learning Track. For each year we have a folder and the folder contains the `run submissions`, the `qrel`, and the `test queries` for that specific year.
