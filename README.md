@@ -48,5 +48,16 @@ Run submissions for each year are included in the `TREC-DLs-files` folder under 
 
 [2] Paul Thomas, Seth Spielman, Nick Craswell, and Bhaskar Mitra. "Large language models can accurately predict searcher preferences." arXiv preprint arXiv:2309.10621 (2023)
 
+## Cite
+
+```
+@article{rahmani2024syndl,
+  title={Syndl: A large-scale synthetic test collection for passage retrieval},
+  author={Rahmani, Hossein A and Wang, Xi and Yilmaz, Emine and Craswell, Nick and Mitra, Bhaskar and Thomas, Paul},
+  journal={arXiv preprint arXiv:2408.16312},
+  year={2024}
+}
+```
+
 ## Acknowledgments
 This research is supported by the Engineering and Physical Sciences Research Council [EP/S021566/1] and the EPSRC Fellowship titled "Task Based Information Retrieval" [EP/P024289/1].
