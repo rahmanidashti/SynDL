@@ -13,7 +13,7 @@ SynDL: A Large-Scale Synthetic Test Collection for Passage Retrieval
 
 ## Overview
 <p align="center">
-  <img src="figs/synthetic-queries.png" width="400">
+  <img src="figs/dataset.png" width="400">
 </a>
 <br />
 
